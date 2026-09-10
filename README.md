@@ -55,7 +55,15 @@ Open `http://localhost:5173`. Create a production build with `npm run build`.
 
 ## Demo access
 
-No credentials are required. Choose **BBMP / Municipal Admin** or **Veterinarian** to demonstrate clinical vaccination updates. Other roles show field and community-oriented actions.
+| Role | Email | Password | Access |
+| --- | --- | --- | --- |
+| BBMP / Municipal Admin | `admin@pawcare.demo` | `Admin@123` | All city, verification, clinical, drive, report, organisation, and reset tools |
+| NGO Worker | `ngo@pawcare.demo` | `Ngo@123` | Registration, verification, drives, reports, organisations, and follow-ups; no clinical updates |
+| Veterinarian | `vet@pawcare.demo` | `Vet@123` | Vaccination, treatment, health, drives, reports, and follow-ups; no registration or organisation administration |
+| Field Volunteer | `volunteer@pawcare.demo` | `Volunteer@123` | Registration, sightings, registry, scan, alerts, and follow-ups; no drives or analytics |
+| Verified Community Feeder | `feeder@pawcare.demo` | `Feeder@123` | Map, registry, scan, alerts, sightings, and read-only follow-ups |
+
+Internal routes require a valid demo session. Navigation, direct URLs, action controls, and WebMCP tools apply the same role permissions. These client-side demo accounts are not production authentication.
 
 ## Two-minute demo
 
