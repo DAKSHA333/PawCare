@@ -5,7 +5,7 @@ export type PawCareRole =
   | 'Field Volunteer'
   | 'Verified Community Feeder';
 
-export type DemoUser = {
+export type PawCareUser = {
   id: string;
   password: string;
   name: string;
@@ -14,12 +14,12 @@ export type DemoUser = {
   organisation: string;
 };
 
-export const demoUsers: DemoUser[] = [
-  { id: 'admin@pawcare.demo', password: 'Admin@123', name: 'Ananya Rao', initials: 'AR', role: 'BBMP / Municipal Admin', organisation: 'BBMP Animal Husbandry' },
-  { id: 'ngo@pawcare.demo', password: 'Ngo@123', name: 'Ravi Kumar', initials: 'RK', role: 'NGO Worker', organisation: 'Care Collective' },
-  { id: 'vet@pawcare.demo', password: 'Vet@123', name: 'Dr. Asha Menon', initials: 'AM', role: 'Veterinarian', organisation: 'Community Vet Network' },
-  { id: 'volunteer@pawcare.demo', password: 'Volunteer@123', name: 'Priya Shah', initials: 'PS', role: 'Field Volunteer', organisation: 'Bengaluru Paws' },
-  { id: 'feeder@pawcare.demo', password: 'Feeder@123', name: 'Meera Nair', initials: 'MN', role: 'Verified Community Feeder', organisation: 'Neighbourhood Feeders' },
+export const pawCareUsers: PawCareUser[] = [
+  { id: 'admin@pawcare.in', password: 'Admin@123', name: 'Ananya Rao', initials: 'AR', role: 'BBMP / Municipal Admin', organisation: 'BBMP Animal Husbandry' },
+  { id: 'ngo@pawcare.in', password: 'Ngo@123', name: 'Ravi Kumar', initials: 'RK', role: 'NGO Worker', organisation: 'Care Collective' },
+  { id: 'vet@pawcare.in', password: 'Vet@123', name: 'Dr. Asha Menon', initials: 'AM', role: 'Veterinarian', organisation: 'Community Vet Network' },
+  { id: 'volunteer@pawcare.in', password: 'Volunteer@123', name: 'Priya Shah', initials: 'PS', role: 'Field Volunteer', organisation: 'Bengaluru Paws' },
+  { id: 'feeder@pawcare.in', password: 'Feeder@123', name: 'Meera Nair', initials: 'MN', role: 'Verified Community Feeder', organisation: 'Neighbourhood Feeders' },
 ];
 
 const roleRoutes: Record<PawCareRole, string[]> = {
