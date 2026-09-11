@@ -25,6 +25,10 @@ The application provides separate workspaces for municipal administrators, NGO w
 
 Dog registration accepts camera capture or JPG, PNG, and WebP uploads up to 12 MB. Images are resized and compressed before being attached to the record.
 
+During registration, MediaPipe's MobileNet image embedder compares the uploaded photo with registry photos. PawCare combines that visual score with location, coat, gender, markings, and tag signals and requires a person to confirm the match.
+
+The city map includes the 2025 Greater Bengaluru Authority ward boundaries from OpenCity/Bharatlas under ODbL 1.0. Its hotspot layer calculates each ward's average care-priority score from registered dogs.
+
 ## Validation
 
 ```bash
